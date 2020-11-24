@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Nom Complet</label><label class="validation-error hide" id="fullNameValidationError">Ce champs est obligatoire</label>
+                        <input type="text" name="fullName" id="fullName" placeholder="Entrez votre nom">
+                    </div>
+                    <div>
+                        <label>Matricule</label>
+                        <input type="text" name="empCode" id="empCode" placeholder="Entrez votre matricule">
+                    </div>
+                    <div>
+                        <label>Salaire</label>
+                        <input type="text" name="salary" id="salary" placeholder="Entrez le montant de votre salaire">
+                    </div>
+                    <div>
+                        <label>Ville</label>
+                        <input type="text" name="city" id="city" placeholder="Entrez votre ville">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Afficher">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Nom Complet</th>
+                            <th>Matricule</th>
+                            <th>Salaire</th>
+                            <th>Ville</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>

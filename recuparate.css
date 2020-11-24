@@ -1,0 +1,53 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(./millway.jpg);
+    background-size: cover;
+}
+.informations
+{
+    width: 380px;
+    height: 200px;
+    background: rgb(56, 31, 31);
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+h1
+{
+    margin: 0;658141741
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 30px;
+}
+.informations input[type="email"]
+{
+    margin-left: 8%;
+    border: none;
+    height: 40px;
+    color: rgb(14, 13, 13);
+    font-size: 16px;
+}
+.informations input[type="reset"]
+{
+    width: 87%;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    margin-left: 5%;
+}
+.informations input[type="reset"]:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
